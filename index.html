@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Moraes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+                theme: {
+                    extend: {
+                        dropShadow: {
+                            'imgShadow': '7px -7px 0px #F5C003',
+                        },
+                        boxShadow: {
+                            'btn': '0px 0px 5.8px 0px #F5C003',
+                            'btnProject': '0px 0px 5.8px 0px #121212'
+                        }
+                    }
+                }
+            }
+      </script>
+</head>
+
+<body class="bg-[#121212] text-[#d9d9d9] bg-mainBg bg-fixed bg-cover">
+
+    <header class="flex  justify-between sticky top-0 z-10 bg-[#101010] shadow-sm ">
+        <h1 class="text-xl sm:text-3xl p-4">Igor Moraes</h1>
+    
+        <div class="left-0 flex items-center sm:hidden p-2">
+    
+            <button type="button" id="btnMenuMobile"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white z-20"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+    
+                <svg class="block h-6 w-6" id="menuOpen" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F5C003"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+    
+                <svg class="hidden h-6 w-6" fill="#F5C003" id="menuClose" style="enable-background:new 0 0 512 512;"
+                    version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+                </svg>
+            </button>
+    
+        </div>
+    
+        <nav
+            class="hidden h-[50vh] w-screen bg-[#101010] p-4 flex flex-col gap-3 justify-center items-center top-15 absolute sm:relative sm:block sm:h-auto sm:w-auto sm:top-0 ">
+            <button class="font-bold text-[#F5C003] p-3 hover:border-b-2 border-[#F5C003]" data-btn="aboutMe">about
+                me</button>
+            <button class="font-bold text-[#F5C003] p-3 hover:border-b-2 border-[#F5C003]"
+                data-btn="projects">projects</button>
+            <button class="font-bold text-[#F5C003] p-3 hover:border-b-2 border-[#F5C003]"
+                data-btn="contact">contacts</button>
+        </nav>
+    </header>
+
+    <main class="m-3 p-5" >
+
+        <div class="my-5 py-5 h-screen" id="aboutMeDiv">
+
+                <div class="md:text-6xl text-2xl font-bold">
+                    <div class="flex justify-between">
+                        <div class="flex flex-col gap-2">
+                            <p>Hi,</p>
+                            <p>I'm Igor,</p>
+                            <p class="text-[#F5C003]">Front-End developer.</p>
+                        </div>
+                        <div class="w-52">
+                            <img src="images/WhatsApp Image 2023-12-08 at 09.37.32.jpeg" alt=""
+                                class="rounded-bl-[55px] h-full object-cover object-center border-2 border-black drop-shadow-imgShadow">
+                        </div>
+                    </div>
+
+                    <p class="md:text-2xl py-2 text-lg text-[#c6c6c6] font-medium">Specializing in making websites, my focus centers on
+                        delivering exceptional user experiences. I strive to create intuitive interfaces and seamless
+                        navigation for captivating and engaging digital platforms.</p>
+                    <div class="flex gap-3 py-2">
+                        <img src="images/html-logo.png" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="HTML 5">
+                        <img src="images/css-logo.png" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="CSS 3">
+                        <img src="images/js-logo.png" alt="" class="w-7 hover:scale-125 transition ease-in-out duration-300"
+                            title="JavaScript">
+                        <img src="images/react-logo.png" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="React">
+                        <img src="images/tailwindcss-logo.svg" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="tailwindcss">
+                        <img src="images/bootstrap-logo.svg" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="BootStrap">
+                        <img src="images/figma-logo.png" alt=""
+                            class="w-7 hover:scale-125 transition ease-in-out duration-300" title="Figma">
+                    </div>
+                </div>
+
+
+
+            <div class="my-5 py-5">
+                <button
+                    class="bg-[#F5C003] p-2 font-bold text-[#121212] border-2 border-black uppercase hover:shadow-btn transition ease-in-out duration-300"
+                    data-btn="projects">see my projects</button>
+            </div>
+        </div>
+
+        <div class="my-5 py-5" id="projectsDiv">
+
+            <div class="border-b-2 border-[#F5C003]">
+                <h2 class="text-2xl sm:text-4xl font-bold text-[#F5C003] my-5">Projects</h2>
+            </div>
+
+            <div class="flex md:flex-row flex-col my-4 py-4 justify-center h-full text-[#121212] ">
+                <div class="border-2 border-[#F5C003] md:w-3/6 w-full">
+                    <img src="images/Desktop - 1.png" alt="" class="object-contain object-center h-full">
+                </div>
+                <div class="gap-3 p-3 bg-[#F5C003] md:w-2/6 w-full text-black flex flex-col content-between overflow-auto">
+                    <h3 class="my-4 font-bold text-xl sm:text-2xl">HR Portal</h3>
+                    <p class="font-medium">My idea was to create a HR Portal where the HR can have acess to all employee's info,
+                        like time sheet, personal data and notes for abscences. I've decided to build this web app with React and
+                        tailwindcss to practice and consolidate my knowledge.</p>
+
+                    <div>
+                        <h3 class="italic font-bold">Status:</h3>
+
+                        <p class="text-sm">I'm currently working on some basic features like an option to edit and delete the data.</p>
+
+                    </div>
+
+                    <div>
+                        <h3 class="italic font-bold">Goals:</h3>
+                        <ul class="text-sm">
+                            <li>Add a time sheet tab;</li>
+                            <li>Add a notes for abscences tab;</li>
+                            <li>Creat a Access level control;</li>
+                            <li>Improve the UI;</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-5 h-full flex items-end">
+                        <a href="#"
+                            class="bg-[#121212] p-2 m-2 font-bold text-[#F5C003] text-sm border-2 border-black uppercase hover:shadow-btnProject transition ease-in-out duration-300">live
+                            demo</a>
+                        <a href="#"
+                            class="bg-[#121212] p-2 m-2 font-bold text-[#F5C003] text-sm border-2 border-black uppercase hover:shadow-btnProject transition ease-in-out duration-300">github</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="py-5 px-8 bg-[#F5C003]" id="contactsDiv">
+        <div class="border-b-2 border-[#121212]">
+            <h2 class="text-2xl sm:text-4xl font-bold text-[#121212] my-5">Contacts</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-between my-5 p-5 h-64 items-center text-[#121212]">
+            <div class="flex flex-col gap-4 items-center sm:w-1/3">
+                <img src="images/phone.png" alt="phone icon" class="w-7 hover:scale-125 transition ease-in-out duration-300">
+
+                <p class="font-bold">
+                    <a href="https://wa.me/351910293814" target="_blank" class="p-3 hover:border-b-2 border-[#121212]">+351 910 293
+                        814</a>
+                </p>
+            </div>
+            <div class="flex flex-col gap-4 items-center sm:w-1/3">
+                <img src="images/email.png" alt="email icon" class="w-7 hover:scale-125 transition ease-in-out duration-300">
+
+                <p class="font-bold">
+                    <a href="malito:igor-gagliardi@hotmail.com" target="_blank"
+                        class="p-3 hover:border-b-2 border-[#121212]">igor-gagliardi@hotmail.com</a>
+                </p>
+            </div>
+            <div class="flex flex-col gap-4 items-center sm:w-1/3">
+                <img src="images/linkedin.png" alt="linkedin icon" class="w-7 hover:scale-125 transition ease-in-out duration-300">
+                <p class="font-bold">
+                    <a href="https://www.linkedin.com/in/igor-g-889134101/" target="_blank"
+                        class="p-3 hover:border-b-2 border-[#121212]">Igor Gagaliardi</a>
+                </p>
+            </div>
+            </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+
+</html>
