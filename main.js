@@ -49,3 +49,19 @@ function scroll(section) {
 
 }
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.add("opacity-100");
+            entry.target.classList.remove("translate-y-20")
+            return
+        } else {
+            entry.target.classList.remove("opacity-100")
+            entry.target.classList.add("translate-y-20")
+        }
+        
+    });
+});
+
+observer.observe(projectsDiv);
+observer.observe(contactDiv);
