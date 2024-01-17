@@ -63,7 +63,7 @@
 
     <main class="m-3 p-5" >
 
-        <div class="my-5 py-5 h-screen" id="aboutMeDiv">
+        <div class="my-5 py-5 opacity-100" id="aboutMeDiv">
 
                 <div class="md:text-6xl text-2xl font-bold">
                     <div class="flex justify-between">
@@ -72,7 +72,7 @@
                             <p>I'm Igor,</p>
                             <p class="text-[#F5C003]">Front-End developer.</p>
                         </div>
-                        <div class="w-52">
+                        <div class="w-52 h-[144px] sm:h-auto">
                             <img src="images/WhatsApp Image 2023-12-08 at 09.37.32.jpeg" alt=""
                                 class="rounded-bl-[55px] h-full object-cover object-center border-2 border-black drop-shadow-imgShadow">
                         </div>
@@ -108,15 +108,15 @@
             </div>
         </div>
 
-        <div class="my-5 py-5" id="projectsDiv">
+        <div class="my-5 py-5 opacity-0 transition-all delay-300 translate-y-20" id="projectsDiv">
 
             <div class="border-b-2 border-[#F5C003]">
                 <h2 class="text-2xl sm:text-4xl font-bold text-[#F5C003] my-5">Projects</h2>
             </div>
 
-            <div class="flex md:flex-row flex-col my-4 py-4 justify-center h-full text-[#121212] ">
+            <div class="flex md:flex-row flex-col my-4 py-4 justify-center h-full text-[#121212]" data-project>
                 <div class="border-2 border-[#F5C003] md:w-3/6 w-full">
-                    <img src="images/Desktop - 1.png" alt="" class="object-contain object-center h-full">
+                    <img src="images/Desktop - 1.png" alt="" class="object-contain object-center sm:h-full">
                 </div>
                 <div class="gap-3 p-3 bg-[#F5C003] md:w-2/6 w-full text-black flex flex-col content-between overflow-auto">
                     <h3 class="my-4 font-bold text-xl sm:text-2xl">HR Portal</h3>
@@ -153,7 +153,7 @@
 
             <div class="flex md:flex-row flex-col my-4 py-4 justify-center h-full text-[#121212] ">
                 <div class="border-2 border-[#F5C003] md:w-3/6 w-full">
-                    <img src="images/Desktop - 1.png" alt="" class="object-contain object-center h-full">
+                    <img src="images/taskApp.png" alt="" class="object-contain object-center sm:h-full">
                 </div>
                 <div class="gap-3 p-3 bg-[#F5C003] md:w-2/6 w-full text-black flex flex-col content-between overflow-auto">
                     <h3 class="my-4 font-bold text-xl sm:text-2xl">Tasks App</h3>
@@ -186,7 +186,7 @@
 
     </main>
 
-    <footer class="py-5 px-8 bg-[#F5C003]" id="contactsDiv">
+    <footer class="py-5 px-8 bg-[#F5C003] opacity-0 transition-all delay-300 translate-y-20" id="contactsDiv">
         <div class="border-b-2 border-[#121212]">
             <h2 class="text-2xl sm:text-4xl font-bold text-[#121212] my-5">Contacts</h2>
         </div>
