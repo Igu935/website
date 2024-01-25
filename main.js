@@ -40,11 +40,11 @@ btnMenuMobile.addEventListener("click", () => {
 
 function scroll(section) {
     if (section === "aboutMe") {
-        aboutMeDiv.scrollIntoView({ behavior: "smooth" })
+        window.scrollTo({top: aboutMeDiv.offsetTop - 70 , behavior: "smooth" })
     } else if (section === "projects") {
-        projectsDiv.scrollIntoView({ behavior: "smooth" })
+        window.scrollTo({top: projectsDiv.offsetTop - 70 , behavior: "smooth" })
     } else if (section === "contact") {
-        contactDiv.scrollIntoView({ behavior: "smooth" })
+        window.scrollTo({top: contactDiv.offsetTop - 70 , behavior: "smooth" })
     }
 
 }
